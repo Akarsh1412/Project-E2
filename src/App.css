@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.Navele{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 1%;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ne{
+  margin:10px;
+  padding: 10px;
+  text-decoration: none; 
+  color: inherit; 
+}
+.ne:hover{
+  border-style: solid;
+  font-weight: bolder;
+  border-color: rgb(13, 235, 243);
+  border-width: 0px 0px 2px 0px;
+}
+.ne:active{
+  color:rgb(13, 235, 243);
+}
+.main {
+  padding: 2%;
+  height: 60vh;
+  background-image: url("https://wallpapers.com/images/hd/night-city-aesthetic-s9611c0r0mkq9gw8.jpg");
+  background-size: cover;
+  animation: changeBackground 10s infinite alternate; 
+
+}
+
+@keyframes changeBackground {
+  0% { background-image: url("https://wallpapers.com/images/hd/night-city-aesthetic-s9611c0r0mkq9gw8.jpg"); }
+  25% { background-image: url("https://images7.alphacoders.com/133/1339451.png"); } 
+  50% { background-image: url("https://wallpapers.com/images/hd/white-bulbs-hd-lights-36a8duz7js1lsn12.jpg"); } 
+  75% { background-image: url("https://wallpapers.com/images/hd/night-city-aesthetic-s9611c0r0mkq9gw8.jpg"); } 
+  100% { background-image: url("https://wallpapercave.com/wp/wp11592642.jpg"); } 
+}
+
+.nav {
+  
+  border-radius: 50px;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: rgb(247, 247, 247);
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-left:auto ;
+  margin-right:auto;
+}
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav > .nav-links > a:hover {
+  border-style: solid;
+  font-weight: bolder;
+  border-color: rgb(13, 235, 243);
+  border-width: 0px 0px 2px 0px;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.main-text {
+  border-radius: 10px;
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  animation: text-shadow 5s linear infinite; 
+}
+
+@keyframes text-shadow {
+  0% {
+    text-shadow:#f47412 5px 5px;
+  }
+  25% {
+    text-shadow:rgb(231, 19, 146) -5px -5px;
+  }
+  50% {
+    text-shadow:turquoise 5px -5px ;
+  }
+  75% {
+    text-shadow:turquoise -5px 5px;
+  }
+  100% {
+    text-shadow:#f47412 5px 5px;
+  }
+}
+
+
+.nav-title-i{
+  padding: 0%;
+  height : 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.about-header{
+  text-align: center;
+  font-size: 1.8rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-shadow:#bababa -1px 10px 10px;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-img-1 {
+  margin: 1%;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  transition: transform 0.3s ease; 
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(84, 84, 84, 0.574);
+}
+
+.about-img-1:hover {
+  transform: perspective(500px) rotateY(-5deg); 
+}
+.about-img{
+  text-align: center;
+}
+.about-content{
+  align-items: center;
+}
+.about-text{
+  padding: 1%;
+  margin: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 50%;
+  background-color: #ffffff9b;
+
+}
+.About-div{
+  background-image: url("https://i.pinimg.com/originals/e7/b9/f7/e7b9f765e3e589e4d445ec3f7069106a.gif");
+  background-size: auto;
+}
+.about-text > p{
+  color: #030303;
+  text-shadow:#bababa -1px 10px 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.about-content{
+  text-align: center;
+}
+.about-text > button{
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  border-style: none;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 
+    12px 12px 16px 0 rgba(73, 73, 73, 0.25),
+    -8px -8px 12px 0 rgba(177, 177, 177, 0.3);
+  background-color: #212121;
+  
+}
+.about-text > button:hover{
+  box-shadow: 
+    12px 12px 16px 0 rgba(33, 33, 33, 0.25),
+    -8px -8px 12px 0 rgba(114, 114, 114, 0.3);
+}
+.about-text > button:active{
+  color: #868686;
+  background-color: #ffffff;
+}
+.about-text > h2{
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:600px) {
+  .about-text>h2{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text > button{
+    padding: 10px;
+  }
+  .about-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-img-1 {
+    width: 90%;
+    height: 100%;
+  }
+  .nav > .nav-btn > label {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 13px;
+  }
+  .nav-btn{
+    margin-top: 10px;
+  }
+  .nav > .nav-links {
+    display: block;
+    width: 100%;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .nav > .nav-links :hover{
+    border-style: solid;
+    font-weight: bolder;
+    border-color: rgb(13, 235, 243);
+    border-width: 0px 0px 2px 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 30vh;
+  }
+  .main-text{
+    
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    margin-top:20px;
+    width: 300px;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: background-color 0.3s ease;
+  }
+  .about-header{
+    font-size: 0.8rem;
+  }
+}
+.m-btn{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: #00000000;
+  color: #ffffff;
+  border-color: #ffffff;
+  margin: 10px;
+}
+.m-btn:hover{
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.m-btn:active{
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.main-btn{
+  margin: 2%;
+  text-align: center;
+}
+
+#picassoFooter {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-navigation, .footer-contact, .footer-social {
+  margin: 10px;
+}
+
+.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+  color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.footer-navigation ul, .footer-social .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation ul li, .social-icon {
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-navigation ul li a, .social-icon {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 8px;
+  background-color: #333;
+  margin-right: 5px;
+}
+
+.social-icon:hover, .footer-navigation ul li a:hover {
+  transform: scale(1.1);
+}
+
+.footer-art canvas {
+  max-width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #picassoFooter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-art canvas {
+      max-width: 100%;
+  }
+}
