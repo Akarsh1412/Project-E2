@@ -5,7 +5,7 @@ import Footer from './footer.js'
 function Landing(){
     return(
         <div>
-            < NAVbar />
+            < NAVbar /> 
             < About />
             < Footer />
         </div>

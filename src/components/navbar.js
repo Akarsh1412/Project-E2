@@ -19,6 +19,8 @@ function NAVbar() {
         return () => clearInterval(typingInterval);
     }, [index]);
 
+
+
     return (
         <div className="main">
             <div className="nav">
@@ -36,7 +38,7 @@ function NAVbar() {
                     <a href="#About-div" >About Us</a>
                     <a href="" >User</a>
                     <a href="" >Admin</a>
-                    <a href="" >SignUp / Login</a>
+                    <a href="/login" >SignUp / Login</a>
                 </div>
             </div>
             <div className="main-text">
