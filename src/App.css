@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.Navele{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 1%;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ne{
+  margin:10px;
+  padding: 10px;
+  text-decoration: none; 
+  color: inherit; 
+}
+.ne:hover{
+  border-style: solid;
+  font-weight: bolder;
+  border-color: rgb(13, 235, 243);
+  border-width: 0px 0px 2px 0px;
+}
+.ne:active{
+  color:rgb(13, 235, 243);
+}
+.main {
+  padding: 2%;
+  height: 60vh;
+  background-image: url("https://wallpapers.com/images/hd/night-city-aesthetic-s9611c0r0mkq9gw8.jpg");
+  background-size: cover;
+  animation: changeBackground 10s infinite alternate; 
+
+}
+
+@keyframes changeBackground {
+  0% { background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bg1.jpg"); }
+  25% { background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bg2.png"); } 
+  50% { background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bg3.jpg"); } 
+  75% { background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bg1.jpg"); } 
+  100% { background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bg4.jpg"); } 
+}
+.nav2{
+  margin: 2%;
+}
+.nav {
+  
+  border-radius: 50px;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: rgb(247, 247, 247);
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-left:auto ;
+  margin-right:auto;
+}
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav > .nav-links > a:hover {
+  border-style: solid;
+  font-weight: bolder;
+  border-color: rgb(13, 235, 243);
+  border-width: 0px 0px 2px 0px;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.main-text {
+  border-radius: 10px;
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  animation: text-shadow 5s linear infinite; 
+}
+
+@keyframes text-shadow {
+  0% {
+    text-shadow:#f47412 5px 5px;
+  }
+  25% {
+    text-shadow:rgb(231, 19, 146) -5px -5px 10px;
+  }
+  50% {
+    text-shadow:turquoise 5px -5px ;
+  }
+  75% {
+    text-shadow:turquoise -5px 5px;
+  }
+  100% {
+    text-shadow:#f47412 5px 5px;
+  }
+}
+
+
+.nav-title-i{
+  padding: 0%;
+  height : 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.about-header{
+  text-align: center;
+  font-size: 1.8rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-shadow:#bababa -1px 10px 10px;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.634);
+  width:60%;
+  border-radius: 40px;
+  
+}
+.about-img-1 {
+  margin: 1%;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  transition: transform 0.3s ease; 
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(84, 84, 84, 0.574);
+}
+
+.about-img-1:hover {
+  transform: perspective(500px) rotateY(-5deg); 
+}
+.about-img{
+  text-align: center;
+}
+.about-content{
+  align-items: center;
+}
+.about-text{
+  padding: 1%;
+  margin: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 50%;
+  background-color: #ffffff9b;
+
+}
+.About-div{
+  background-image: url("C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bgi.gif");
+  background-size: auto;
+}
+.about-text > p{
+  color: #030303;
+  text-shadow:#bababa -1px 10px 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.about-content{
+  text-align: center;
+}
+.about-text > button{
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  border-style: none;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 
+    12px 12px 16px 0 rgba(73, 73, 73, 0.25),
+    -8px -8px 12px 0 rgba(177, 177, 177, 0.3);
+  background-color: #212121;
+  
+}
+.about-text > button:hover{
+  box-shadow: 
+    12px 12px 16px 0 rgba(33, 33, 33, 0.25),
+    -8px -8px 12px 0 rgba(114, 114, 114, 0.3);
+}
+.about-text > button:active{
+  color: #868686;
+  background-color: #ffffff;
+}
+.about-text > h2{
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:600px) {
+  .about-text>h2{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text > button{
+    padding: 10px;
+  }
+  .about-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-img-1 {
+    width: 90%;
+    height: 100%;
+  }
+  .nav > .nav-btn > label {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 13px;
+  }
+  .nav-btn{
+    margin-top: 10px;
+  }
+  .nav > .nav-links {
+    display: block;
+    width: 100%;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .nav > .nav-links :hover{
+    border-style: solid;
+    font-weight: bolder;
+    border-color: rgb(13, 235, 243);
+    border-width: 0px 0px 2px 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 30vh;
+  }
+  .main-text{
+    
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    margin-top:20px;
+    width: 300px;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: background-color 0.3s ease;
+  }
+  .about-header{
+    font-size: 0.8rem;
+  }
+}
+.m-btn{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: #00000000;
+  color: #ffffff;
+  border-color: #ffffff;
+  margin: 10px;
+}
+.m-btn:hover{
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.m-btn:active{
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.main-btn{
+  margin: 2%;
+  text-align: center;
+}
+
+#picassoFooter {
+  background-color: #f1f1f1;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  margin : 2%;
+  border-radius: 20px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(154, 154, 154, 0.696),
+    -8px -8px 12px 0 rgba(179, 179, 179, 0.3);
+  text-align: center;
+}
+
+.footer-navigation, .footer-contact, .footer-social {
+  margin: 10px;
+}
+
+.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.footer-navigation ul, .footer-social .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation ul li, .social-icon {
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-navigation ul li a, .social-icon {
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.social-icon:hover, .footer-navigation ul li a:hover {
+  transform: scale(1.1);
+}
+
+.footer-art canvas {
+  max-width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #picassoFooter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-art canvas {
+      max-width: 100%;
+  }
+}
+.event-heading > p{
+  font-size: 3rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow:#cccccc -1px 10px 10px;
+  text-align: center;
+}
+
+.photo-wrapper {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2%;
+}
+
+.photo {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 450px;
+    height: 600px;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+
+    & img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        bottom: -1rem;
+        left: -16rem;
+        background: linear-gradient(90deg, transparent, white, transparent);
+        width: 16rem;
+        opacity: 0;
+    }
+
+    &:hover::after {
+        left: 100%;
+        opacity: 0.15;
+        transition: inset 1s;
+    }
+
+    &:hover {
+        transform: scale(1.1) !important;
+    }
+}
+.clubs{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+
+.card{
+  height: 50%;
+  width: 25%;
+  margin: 2%;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 
+  12px 12px 16px 0 rgba(204, 204, 204, 0.696),
+  -8px -8px 12px 0 rgba(199, 199, 199, 0.3);
+}
+.card > img{
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+}
+.explore-button{
+  border-style: none;
+  padding: 2.5%;
+  font-weight: bold;
+  border-radius: 40px;
+  box-shadow: 
+  12px 12px 16px 0 rgba(182, 182, 182, 0.332),
+  -8px -8px 12px 0 rgba(222, 222, 222, 0.884);
+  background-color: #f6f5f5;
+
+}
+.explore-button:hover{
+  transform: scale(1.09);
+}
+.explore-button:active{
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.card:hover{
+  transform: scale(1.09);
+}
+.Lhead{
+  color: #030303;
+  text-shadow:#bababa -1px 10px 10px;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.lboard{
+  background-image: url('C:\Users\charc\Documents\VIT\Course_Sem_5\PE2\project\frontend\public\bgi.gif');
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 
+  12px 12px 16px 0 rgba(204, 204, 204, 0.696),
+  -8px -8px 12px 0 rgba(199, 199, 199, 0.3);
+  width: 90%;
+  margin: 5%;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.listele{
+  text-align: center;
+  background-color: #f2f2f2e8;
+  padding: 1%;
+  border-radius: 20px;
+  box-shadow: 
+  12px 12px 16px 0 rgba(204, 204, 204, 0.696),
+  -8px -8px 12px 0 rgba(199, 199, 199, 0.3);
+  margin: 10px;
+  color: #030303;
+  text-shadow:#bababa -1px 10px 10px;
+  font-size: 1.5rem;
+}
+.listele:hover{
+  transform: scale(1.09)
+}
+.listimg{
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+}
+.Popup1 {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  height:80%;
+  width: 70%;
+  text-align: center;
+  gap: 50px;
+}
+.Popup1 > img{
+  height:100%;
+  width: 40%;
+}
+.poptext > h3,form{
+  text-align: left;
+}
+.poptext > p {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+.poptext > form >label{
+  margin: 1%;
+  font-weight: bolder;
+}
+.poptext > form >input{
+  border-style: solid;
+  padding: 2%;
+  background-color: #f8f8f8;
+  margin: 1%;
+}
+.poptext > form >button{
+  border-style: none;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 20px;
+  background-color: #01c4ff;
+  color: white;
+  font-weight: bolder;
+}
+.poptext > form >button:hover{
+  background-color: #2bcdff;
+}
+.poptext > form >button:active{
+  background-color: white;
+  color: #01c4ff;
+}
