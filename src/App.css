@@ -446,6 +446,15 @@
   flex-wrap: wrap;
   margin: 2%;
 }
+.clubs1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.clubs1 > * {
+  flex: 0 0 calc(20% - 70px);
+  margin: 10px;
+  box-sizing: border-box;
+}
 
 .card{
   height: 50%;
@@ -459,28 +468,33 @@
   12px 12px 16px 0 rgba(204, 204, 204, 0.696),
   -8px -8px 12px 0 rgba(199, 199, 199, 0.3);
 }
+
 .card > img{
   border-radius: 50%;
   height: 40%;
   width: 40%;
 }
+.clubs1 > .card{
+  box-shadow: none;
+  border: #000000 solid 2px;
+  background-color: rgb(255, 255, 255);
+}
+
 .explore-button{
   border-style: none;
-  padding: 2.5%;
+  padding: 3.5%;
   font-weight: bold;
-  border-radius: 40px;
-  box-shadow: 
-  12px 12px 16px 0 rgba(182, 182, 182, 0.332),
-  -8px -8px 12px 0 rgba(222, 222, 222, 0.884);
-  background-color: #f6f5f5;
+  border-radius: 10px;
+  background-color: #03baf7;
+  color: white;
 
 }
 .explore-button:hover{
   transform: scale(1.09);
 }
 .explore-button:active{
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #03baf7;
   box-shadow: 
     12px 12px 16px 0 rgba(255, 255, 255, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
@@ -554,7 +568,17 @@
   height:100%;
   width: 40%;
 }
+.Popup2{
+  display: flex;
+  position: fixed;
+  top: 20vh;
+  left: 45vh;
+  padding: 1%;
+  text-align: center;
+  z-index: 100;
+}
 .poptext > h3,form{
+  margin: 10px;
   text-align: left;
 }
 .poptext > p {
@@ -562,17 +586,19 @@
   margin-left: auto;
   margin-right: auto;
 }
-.poptext > form >label{
+.poptext >.form1 > form >label{
   margin: 1%;
   font-weight: bolder;
 }
-.poptext > form >input{
+.poptext>.form1 > form >input{
   border-style: solid;
   padding: 2%;
   background-color: #f8f8f8;
-  margin: 1%;
+  margin: 3%;
+  width: 25vh;
+  border-radius: 10px 50px 50px 10px;
 }
-.poptext > form >button{
+.poptext >.form1> form >button{
   border-style: none;
   padding: 2%;
   margin: 1%;
@@ -580,11 +606,166 @@
   background-color: #01c4ff;
   color: white;
   font-weight: bolder;
+  width: 15vh;
 }
-.poptext > form >button:hover{
+.poptext >.form1> form >button:hover{
   background-color: #2bcdff;
 }
-.poptext > form >button:active{
+.poptext >.form1> form >button:active{
   background-color: white;
   color: #01c4ff;
+}
+
+.poptext >.form1>form > .inputimg{
+  border-color: #7c7c7c;
+  border-width: 2px;
+}
+.poptext >.form1{
+  padding: 0px;
+  display: flex;
+  justify-content:space-between;
+}
+.poptext >.form1 >form{
+  width: 40vh;
+  height: 50vh;
+}
+.popimg{
+  margin: 0px;
+  height: 30vh;
+  width: 30vh;
+  align-items: center;
+  padding: 1%;
+  border: #818181 solid 2px;
+  border-radius: 10px;
+}
+.qrhead{
+  margin: 1%;
+}
+
+.star-rating {
+  display: flex;
+  font-size: 2rem; 
+  justify-content: center;
+}
+
+.star-rating label {
+  
+  margin-right: 5px; /* Add spacing between stars */
+}
+
+.star-rating input[type="radio"] {
+  
+  display: none; /* Hide radio buttons */
+}
+
+.star-rating FaStar {
+
+  font-size: 2rem; /* Adjust star size */
+  cursor: pointer; /* Make stars clickable */
+}
+
+.star-rating .filled {
+  
+  color: gold; /* Color filled stars */
+}
+
+.star-rating .empty {
+
+  color: #ccc; /* Color empty stars */
+}
+
+textarea {
+  font-size: 1.05rem;
+  width: 100%; /* Make textarea fill available width */
+  padding: 10px; /* Add padding for better readability */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  margin-top: 10px; /* Add space between stars and textarea */
+  text-align: center;
+}
+
+
+button[type="submit"] {
+  font-size: 1.02rem;
+  background-color: #4CAF50; /* Green submit button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45A049; /* Darken button on hover */
+}
+.feedback{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
+  background-color: white;
+}
+.feedback > form{
+  text-align: center;
+  padding: 4%;
+  padding-right: 6% ;
+  border: #000000 solid 2px;
+  border-radius: 10px;
+  
+}
+.feedbacktext1{
+  text-align: center;
+  margin: 1%;
+  font-size: 1.6rem;
+}
+.feedbacktext2{
+  text-align: center;
+  margin: 1%;
+  font-size: 1.3rem;
+}
+.club-info-1{
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.club-info-1>h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0%;
+}
+.club-info-1>h3{
+  margin-top: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.libtn{
+  border-style: none;
+  font-weight: bolder;
+  color: white;
+  background-color: #01c4ff;
+  border-radius: 10px;
+  padding: 1%;
+  width: 10vh;
+}
+.libtn:active{
+  color: #01c4ff;
+  background-color: white;
+}
+.libtn:hover{
+  transform: scale(1.09);
+}
+.club-info-1>ul{
+  list-style-type: none;
+  padding: 3%;
+  border: #000000 solid 1px;
+  
+}
+.club-info-1>ul>li{
+  display: flex;
+  margin-bottom: 3%;
+  padding: 2%;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  border: #000000 solid;
+  border-width: 0px 0px 1px 0px;
 }

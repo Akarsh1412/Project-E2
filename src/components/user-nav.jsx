@@ -22,8 +22,8 @@ function NAVbar() {
                 
                 <div className="nav-links">
                     <Link  to="/" >Home</Link>
-                    <Link  to="/user" >Dashboard</Link>
-                    <a href="" >Events</a>
+                    <Link  to="/user" >Events</Link>
+                    <Link  to="/feedback" >Feedback</Link>
                     <Link  to="/leaderboard" >LeaderBoard</Link>
                 </div>
             </div>

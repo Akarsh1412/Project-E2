@@ -74,16 +74,26 @@ function InfiniteScrollSlider() {
               an unknown printer took a galley of type and scrambled it to 
               make a type specimen book Ipsum.
             </p>
+            <h3>Entry Fee : Rs 500</h3>
             <h3>Venue : Auditorium B12</h3>
             <h3>Timing : 10:00 am - 5:00 pm</h3>
+            <h3></h3>
             <hr />
-            <form>  
-              <label for="name">Name</label><br />
-              <input type="text" id="name" name="name" placeholder="Enter your name" required />  <br />
-              <label for="registrationNumber">Registration Number</label><br />
-              <input type="text" id="registrationNumber" name="registrationNumber" placeholder="Enter your reg number" required />  <br />
-              <button type="submit">Register</button> 
-            </form>
+            <div className="form1">
+              <form>  
+                <label for="name">Name</label><br />
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />  <br />
+                <label for="registrationNumber">Registration Number</label><br />
+                <input type="text" id="registrationNumber" name="registrationNumber" placeholder="Enter your reg number" required />  <br />
+                <label for="Paymentproof">Payment Proof</label><br />
+                <input className="inputimg" type="file" id="Paymentproof" name="Paymentproof" placeholder="Attach Payment screenshot" required />  <br />
+                <button type="submit">Register</button> <button type="submit">Volunteer</button> 
+              </form>
+              <div>
+                <h3 className="qrhead">PAYMENT LINK</h3>
+                <img className="popimg" src="./qr_code_barcode.jpg"></img>
+              </div>
+            </div>
           </div>
         </div>
       </Popup>

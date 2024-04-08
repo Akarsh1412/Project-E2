@@ -7,7 +7,7 @@ const Card = ({ imageUrl, description, onExplore }) => {
       <div className="card-content">
         <p className="card-description">{description}</p>
         <button onClick={onExplore} className="explore-button">
-          Explore More
+          Explore
         </button>
       </div>
     </div>
