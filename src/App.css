@@ -577,6 +577,61 @@
   text-align: center;
   z-index: 100;
 }
+
+.Popup3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  height:60%;
+  width: 65%;
+  text-align: center;
+  gap: 10px;
+}
+
+.Popup3 img{
+  height: 80%;
+  width: 100%;
+  margin: 0;
+  object-fit: contain;
+  grid-area: 1 / 1 / 3 / 1;
+}
+
+.Popup3 h2{
+  height:2rem;
+  margin: 0;
+}
+
+.evntdetail{
+  overflow: auto;
+  margin: 0;
+  grid-area: 2 / 2 / -1 / -1;
+}
+
+.evntdetail > ul {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.evntdetail > ul > li{
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+  line-height: 30px;
+}
+
 .poptext > h3,form{
   margin: 10px;
   text-align: left;

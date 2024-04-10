@@ -6,6 +6,7 @@ import App from './App'; // Import the App component
 import reportWebVitals from './reportWebVitals';
 import Landing from './components/landingpage.jsx'; // Assuming correct file path and extension
 import User from './components/user.jsx'; // Assuming correct file path and extension
+import Profile from './components/profile.jsx';
 import LeaderBoard from './components/leaderboard.jsx';
 import Feedback from './components/fdbpage.jsx';
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/user" element={<User />} /> 
         <Route path="/feedback" element={<Feedback />} /> 
         <Route path="/leaderboard" element={<LeaderBoard />} /> 
+        <Route path="/profile" element={<Profile />} /> 
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

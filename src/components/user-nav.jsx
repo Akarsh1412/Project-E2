@@ -25,6 +25,7 @@ function NAVbar() {
                     <Link  to="/user" >Events</Link>
                     <Link  to="/feedback" >Feedback</Link>
                     <Link  to="/leaderboard" >LeaderBoard</Link>
+                    <Link  to="/profile" >My Profile</Link>
                 </div>
             </div>
         </div>
